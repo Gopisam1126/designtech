@@ -146,57 +146,73 @@ body {
 }
 
 /*  */
+/* FOOTER  */
 
 .footer {
-    /* margin: 0 20% 0 20%; */
-    background-color: #000;
-    color: #fff;
+    padding: 2.5% 10% 2.5% 10%;
+    background-color: #111;
+    color: #EEE;
 }
 
 .footer-container {
+    width: 100%;
+    justify-content: space-between;
     display: flex;
-    position: relative;
-    height: 400px;
     font-family: 'Ysabeau', sans-serif;
     /* background-color: antiquewhite; */
-    margin: 0 20% 0 20%;
 }
 
-.fsec,
-.fsec1 {
-    margin: 5% 3.5% 0 0%;
+.fsec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 300px;
 }
 
-.fsec p {
-    margin-top: 10%;
+.fsec>div {
+    display: flex;
+    gap: 5%;
 }
 
+
 .fa-brands {
-    color: orange;
+    color: var(--secondary);
     font-size: 1.3rem;
-    margin-right: 5%;
-    margin-top: 10%;
+    text-decoration: none;
+}
+
+.fa-brands:hover {
+    color: var(--primary);
+    transition: color ease 200ms;
+}
+
+.fsec1,
+.fsec2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .fsec1 li,
 .fsec2 li {
     list-style: none;
-    line-height: 2.5;
+    line-height: 2.4;
 }
 
 .fsec1 a,
 .fsec2 a {
     text-decoration: none;
-    color: #fff;
+    color: #EEE;
 }
 
-.fsec2 {
-    margin: 5% 3.5% 0 0%;
+.fsec1 a:hover,
+.fsec2 a:hover {
+    color: var(--primary);
 }
 
 .fsec3 {
-    margin: 5% 3.5% 0 10%;
+    display: flex;
+    flex-direction: column;
     line-height: 1.3;
 }
 
