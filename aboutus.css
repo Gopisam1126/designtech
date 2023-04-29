@@ -159,6 +159,7 @@
 
 .abt p {
     font-size: 1.3rem;
+    text-align: justify;
 }
 
 @media only screen and (max-width: 600px) {

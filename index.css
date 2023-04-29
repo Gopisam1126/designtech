@@ -333,16 +333,16 @@
     margin-top: 5%;
 
     box-shadow: 5px 5px 10wpx #0002;
-    transition: all 300ms ease-in-out;
+    transition: all 400ms ease-in-out;
 }
 
 .learnmore:hover {
-    width: 160px;
+    width: 130px;
     border: black 1px solid;
     color: #FFF;
     background-color: var(--primary);
     border-radius: 40px;
-    transition: all 200ms ease-in-out;
+    transition: all 400ms ease-in-out;
 }
 
 /* LETS DISCUSS */
