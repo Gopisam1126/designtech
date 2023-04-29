@@ -1,43 +1,56 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary: #279eee;
+    --secondary: #5d20e2;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Barlow', consolas;
     /* color: white; */
 }
-.leftcontainer{
-    background: url("./assets/pexels-mohan-reddy-4227873.jpg");
+
+.leftcontainer {
+    background: url("https://images.pexels.com/photos/7120485/pexels-photo-7120485.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     height: 30rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
 }
-.headcontainer{
-    margin: 2% 0 5% 13.5%;
+
+.headcontainer {
+    margin: 0% 0 0% 13%;
     position: absolute;
 }
-.headcontainer h1{
-    font-size: 3.5rem;
-    font-family: 'Bruno Ace', cursive;
+
+.headcontainer h1 {
+    font-size: 6rem;
+    font-family: 'Showcard Gothic', cursive;
 }
-.headcontainer h4{
-    font-size: 1.1rem;
-    font-family: 'Bruno Ace', cursive;
-    margin-top: 2.5%;
+
+.headcontainer h4 {
+    font-size: 1.5rem;
+    font-family: 'Barlow', cursive;
 }
-.dlogo{
+
+.dlogo {
     position: relative;
-    height: 100px;
-    width: 90px;
+    height: 150px;
     top: 150px;
     border-radius: 10px;
-    margin: 2% 0 0 7%;
+    margin: 0% 0 0 7%;
 }
+
 /* NAVBAR */
-.navbar{
+.navbar {
     margin: 15% 0 0 7%;
 }
-.navbar li{
+
+.navbar li {
     list-style: none;
     float: left;
     margin-right: 2.3%;
@@ -45,14 +58,17 @@
     font-family: 'Ysabeau', sans-serif;
     padding: 5px;
 }
-.navbar a{
+
+.navbar a {
     text-decoration: none;
     transition: 0.12s linear;
+    color: #DDD;
+}
+
+.navbar a:hover {
     color: white;
 }
-.navbar a:hover{
-    color: #acb8be;
-}
+
 .navbar {
     overflow: hidden;
     /* background-color: #333; */
@@ -60,78 +76,114 @@
 
 /*  */
 
+/* FOOTER  */
 
-  .footer-container{
+.footer {
+    padding: 2.5% 10% 2.5% 10%;
+    background-color: var(--secondary);
+    color: #FFF;
+}
+
+.footer-container {
+    width: 100%;
+    justify-content: space-between;
     display: flex;
-    position: relative;
-    /* top: 691px; */
-    background-color: #000;
-    color: #fff;
-    height: 400px;
     font-family: 'Ysabeau', sans-serif;
     /* background-color: antiquewhite; */
 }
-.fsec, .fsec1{
-    margin: 5% 3.5% 0 7%;
+
+.fsec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 300px;
 }
-.fsec p{
-    margin-top: 10%;
+
+.fsec>div {
+    display: flex;
+    gap: 5%;
 }
 
-.fa-brands{
-    color: orange;
+
+.fa-brands {
+    color: white;
     font-size: 1.3rem;
-    margin-right: 5%;
-    margin-top: 10%;
-}
-.fsec1 li, .fsec2 li{
-    list-style: none;
-    line-height: 2.5;
-}
-.fsec1 a, .fsec2 a{
     text-decoration: none;
-    color: #fff;
 }
-.fsec2{
-    margin: 5% 3.5% 0 0%;
+
+.fa-brands:hover {
+    color: var(--primary);
+    transition: color ease 200ms;
 }
-.fsec3{
-    margin: 5% 3.5% 0 10%;
+
+.fsec1,
+.fsec2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fsec1 li,
+.fsec2 li {
+    list-style: none;
+    line-height: 2.4;
+}
+
+.fsec1 a,
+.fsec2 a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.fsec1 a:hover,
+.fsec2 a:hover {
+    color: aqua;
+}
+
+.fsec3 {
+    display: flex;
+    flex-direction: column;
     line-height: 1.3;
 }
-.abt{
+
+.abt {
     margin: 5% 20% 5% 20%;
 }
-.abt h2{
+
+.abt h2 {
     text-align: center;
     margin-bottom: 5%;
-    text-decoration: underline;
-    font-size: 2.4rem;
+    color: var(--secondary);
+    font-size: 3rem;
 }
-.abt p{
+
+.abt p {
     font-size: 1.3rem;
 }
 
 @media only screen and (max-width: 600px) {
-    .services{
+    .services {
         margin: 5% 4% 0 4%;
     }
-    .headcontainer{
+
+    .headcontainer {
         /* margin: 2% 0 5% 13.5% */
         margin: 10% 0 5% 30%;
         position: absolute;
     }
-    .headcontainer h1{
+
+    .headcontainer h1 {
         font-size: 2.5rem;
         font-family: 'Bruno Ace', cursive;
     }
-    .headcontainer h4{
+
+    .headcontainer h4 {
         font-size: 1.1rem;
         font-family: 'Bruno Ace', cursive;
         margin-top: 8.5%;
     }
-    .dlogo{
+
+    .dlogo {
         position: relative;
         height: 100px;
         width: 90px;
@@ -139,7 +191,8 @@
         border-radius: 10px;
         margin: 2% 0 0 7%;
     }
-    .navbar{
+
+    .navbar {
         display: none;
         margin: 15% 0 0 7%;
     }

@@ -108,6 +108,12 @@ body {
     box-shadow: 5px 5px 20px #0002;
     border: 1.5px white solid;
     border-radius: 5px;
+    transition: scale ease 400ms;
+}
+
+.p1:hover {
+    scale: 1.02;
+    transition: scale ease 400ms;
 }
 
 .proHr {

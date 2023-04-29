@@ -242,7 +242,7 @@
 }
 
 .lm a:hover {
-    color: white;
+    color: var(--secondary);
 }
 
 /* OUR-WORKS */
