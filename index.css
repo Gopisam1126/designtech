@@ -333,7 +333,7 @@
     margin-top: 5%;
 
     box-shadow: 5px 5px 10wpx #0002;
-    transition: all 400ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
 .learnmore:hover {
@@ -408,7 +408,7 @@
 /* FOOTER  */
 
 .footer {
-    padding: 2.5% 10% 2.5% 10%;
+    padding: 2.5% 7% 2.5% 7%;
 }
 
 .footer-container {
