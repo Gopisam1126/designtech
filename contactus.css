@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary: #279eee;
+    --secondary: #5d20e2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', consolas;
+    /* color: white; */
+}
+
+.leftcontainer {
+    background: url("https://images.pexels.com/photos/7120485/pexels-photo-7120485.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    height: 30rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.headcontainer {
+    margin: 0% 0 0% 13%;
+    position: absolute;
+}
+
+.headcontainer h1 {
+    font-size: 6rem;
+    font-family: 'Showcard Gothic', cursive;
+}
+
+.headcontainer h4 {
+    font-size: 1.5rem;
+    font-family: 'Barlow', cursive;
+}
+
+.dlogo {
+    position: relative;
+    height: 150px;
+    top: 150px;
+    border-radius: 10px;
+    margin: 0% 0 0 7%;
+}
+
+/* NAVBAR */
+.navbar {
+    margin: 15% 0 0 7%;
+}
+
+.navbar li {
+    list-style: none;
+    float: left;
+    margin-right: 2.3%;
+    font-size: 1.2rem;
+    font-family: 'Ysabeau', sans-serif;
+    padding: 5px;
+}
+
+.navbar a {
+    text-decoration: none;
+    transition: 0.12s linear;
+    color: #DDD;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.navbar {
+    overflow: hidden;
+    /* background-color: #333; */
+}
+
+/*  */
+/* FOOTER  */
+
+.footer {
+    padding: 2.5% 7% 2.5% 7%;
+    background-color: var(--secondary);
+    color: #FFF;
+}
+
+.footer-container {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    font-family: 'Ysabeau', sans-serif;
+    /* background-color: antiquewhite; */
+}
+
+.fsec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.fsec>div {
+    display: flex;
+    gap: 5%;
+}
+
+
+.fa-brands {
+    color: var(--secondary);
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.fa-brands:hover {
+    color: var(--primary);
+    transition: color ease 200ms;
+}
+
+.fsec1,
+.fsec2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fsec1 li,
+.fsec2 li {
+    list-style: none;
+    line-height: 2.4;
+}
+
+.fsec1 a,
+.fsec2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.fsec1 a:hover,
+.fsec2 a:hover {
+    color: var(--primary);
+}
+
+.fsec3 {
+    display: flex;
+    line-height: 1.3;
+    justify-content: space-between;
+    gap: 6vw;
+}
+
+.fnd {
+    display: flex;
+    flex-direction: column;
+}
+
+.abt {
+    margin: 5% 20% 5% 20%;
+}
+
+.abt h2 {
+    text-align: center;
+    margin-bottom: 5%;
+    color: var(--secondary);
+    font-size: 3rem;
+}
+
+.abt p {
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.abt form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-size: 1.35rem;
+}
+
+form input,
+form textarea {
+    outline: none;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #EEE;
+    border: 2px solid white;
+    padding: 12px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    transition: border ease 300ms;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #ABABAB;
+}
+
+form input:focus,
+form textarea:focus {
+    border: 2px solid var(--secondary);
+    transition: border ease 500ms;
+}
+
+form button {
+    width: 110px;
+    height: 40px;
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+    text-transform: uppercase;
+    border-radius: 7px;
+    outline: none;
+    border: 2px solid black;
+    background-color: var(--secondary);
+    color: white;
+    font-size: 1.1rem;
+    transition: all 350ms ease;
+}
+
+form button:hover {
+    border-radius: 20px;
+    filter: brightness(150%);
+    transition: all 350ms ease;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .services {
+        margin: 5% 4% 0 4%;
+    }
+
+    .headcontainer {
+        /* margin: 2% 0 5% 13.5% */
+        margin: 10% 0 5% 30%;
+        position: absolute;
+    }
+
+    .headcontainer h1 {
+        font-size: 2.5rem;
+        font-family: 'Bruno Ace', cursive;
+    }
+
+    .headcontainer h4 {
+        font-size: 1.1rem;
+        font-family: 'Bruno Ace', cursive;
+        margin-top: 8.5%;
+    }
+
+    .dlogo {
+        position: relative;
+        height: 100px;
+        width: 90px;
+        top: 150px;
+        border-radius: 10px;
+        margin: 2% 0 0 7%;
+    }
+
+    .navbar {
+        display: none;
+        margin: 15% 0 0 7%;
+    }
+}

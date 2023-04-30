@@ -1,20 +1,24 @@
 @media only screen and (max-width: 600px) {
+
     /*   */
-    .headcontainer{
+    .headcontainer {
         /* margin: 2% 0 5% 13.5% */
         margin: 10% 0 5% 30%;
         position: absolute;
     }
-    .headcontainer h1{
+
+    .headcontainer h1 {
         font-size: 2.5rem;
         font-family: 'Bruno Ace', cursive;
     }
-    .headcontainer h4{
+
+    .headcontainer h4 {
         font-size: 1.1rem;
         font-family: 'Bruno Ace', cursive;
         margin-top: 8.5%;
     }
-    .dlogo{
+
+    .dlogo {
         position: relative;
         height: 100px;
         width: 90px;
@@ -22,72 +26,54 @@
         border-radius: 10px;
         margin: 2% 0 0 7%;
     }
-    .navbar{
+
+    .navbar {
         display: none;
         margin: 15% 0 0 7%;
     }
+
     /*  */
-    .details{
-        display: flex;
-        margin: 5% 4% 0 4%;
-    }
-    .sec1, .sec2, .sec3{
-        margin-left: 5%;
-    }
-    .sec1 h3, .sec2 h3, .sec3 h3{
-        color: rgb(255, 166, 0);
-        font-size: 1.3rem;
-    }
-    .headsec h4{
-        font-size: 1.3rem;
-        color: rgb(255, 166, 0);
-    }
-    .headsec p{
-        font-size: 1.11rem;
-    }
     /* FEATURES */
-    .features{
+    .features {
         display: flex;
         margin: 8% 4% 0 4%;
     }
-    .icon{
+
+    .icon {
         font-size: 2.1rem;
-        color: orange;
     }
-    .s1, .s2, .s3{
+
+    .s1,
+    .s2,
+    .s3 {
         margin-right: 12.5%;
     }
-    .s1p , .s2p, .s3p, .s4p{
+
+    .s1p,
+    .s2p,
+    .s3p,
+    .s4p {
         margin-top: 10%;
         font-size: 1.1rem;
     }
 
     /* OUR SERVICES */
 
-    .services{
-        position: absolute;
-        background-color: #000000d8;
-        height: 2100px;
-        width: 500px;
-        margin: 5% 0% 0 0%;
-        color: white;
-        font-family: 'Ysabeau', sans-serif;
-    }
-    .scontainer1{
-        display: block;
-        margin: 0 7% 0 7%;
-    }
+    .scontainer1 {}
+
     .ourservice-container {
         position: relative;
         margin: 3% 0 5% 0%;
         width: 300px;
         height: 150px;
     }
-    .ourservice-container h2{
-        font-size: 3rem;
+
+    .ourservice-container h2 {
+        font-size: 2.3rem;
         margin-bottom: 7%;
     }
-    .service{
+
+    .service {
         border-radius: 7px;
         background-color: #fff;
         color: #000;
@@ -95,72 +81,87 @@
         width: 400px;
         margin: 3% 0% 0% 3%;
     }
-    .ser{
+
+    .ser {
         margin: 5%;
     }
-    .ser p{
+
+    .ser p {
         margin-top: 5%;
     }
-    .i{
+
+    .i {
         color: orange;
         font-size: 2.5rem;
         margin-bottom: 5%;
     }
-    .ser1 p{
+
+    .ser1 p {
         margin-top: 5%;
     }
-    .scontainer2{
+
+    .scontainer2 {
         display: block;
         margin: 0 7% 0 7%;
     }
-    .service1{
+
+    .service1 {
         margin-top: 1.5%;
     }
-    .lm{
+
+    .lm {
         margin-top: 3.5%;
     }
-    .lm a{
+
+    .lm a {
         text-decoration: none;
         color: orangered;
         transition: 0.1s linear;
         font-weight: 600;
     }
-    .lm a:hover{
+
+    .lm a:hover {
         color: blue;
     }
 
     /* OUR WORKS */
 
-    .ourworks{
+    .ourworks {
         margin: 8% 4% 0% 4%;
         position: relative;
         top: 2150px;
         font-family: 'Ysabeau', sans-serif;
     }
-    .ourworks h2{
+
+    .ourworks h2 {
         margin: 0 0 5% 1%;
         font-size: 2.5rem;
     }
-    .w1{
+
+    .w1 {
         display: flex;
         padding: 1.1%;
         margin: 5% 0 0 0;
     }
-    .w1 img{
+
+    .w1 img {
         /* width: 100%; */
         border-radius: 8px;
         height: 250px;
         width: 250px;
     }
-    .w1 div{
+
+    .w1 div {
         margin-left: 3%;
-        margin-right:10%;
+        margin-right: 10%;
     }
-    .cwr h3{
+
+    .cwr h3 {
         margin-bottom: 1.6%;
         font-size: 1.5rem;
     }
-    .crosslink{
+
+    .crosslink {
         height: 40px;
         width: 180px;
         background-color: orange;
@@ -169,14 +170,15 @@
         transition: 0.1s linear;
         opacity: 0.8;
     }
-    .crosslink h4{
+
+    .crosslink h4 {
         text-align: center;
         padding: 14.5px;
     }
 
     /* VIEW MORE BUTTON */
 
-    .learnmore{
+    .learnmore {
         position: relative;
         top: 2200px;
         height: 50px;
@@ -192,26 +194,30 @@
 
     /* LETS DISCUSS */
 
-    .dcontainer{
+    .dcontainer {
         position: relative;
         top: 2300px;
         width: 500px;
         background-color: orange;
         color: #fff;
     }
-    .discuss{
+
+    .discuss {
         margin: 0 7% 0 7%;
         padding: 10%;
         text-align: center;
         font-family: 'Ysabeau', sans-serif;
     }
-    .discuss h1{
+
+    .discuss h1 {
         font-size: 4rem;
     }
-    .discuss h2{
+
+    .discuss h2 {
         font-size: 2.5rem;
     }
-    .dbtn{
+
+    .dbtn {
         height: 50px;
         width: 200px;
         background-color: #fff;
@@ -221,81 +227,100 @@
         transition: 0.1s linear;
         opacity: 0.8;
     }
-    .dbtn h3{
+
+    .dbtn h3 {
         text-align: center;
         padding: 14.5px;
     }
-    .dbtn a{
+
+    .dbtn a {
         text-decoration: none;
         color: #000;
     }
-    .dbtn:hover{
+
+    .dbtn:hover {
         scale: 1.1;
         opacity: 1;
     }
 
     /* FOOTER  */
 
-    .footer-container{
+    .footer-container {
         display: block;
         position: relative;
         top: 2350px;
         height: 400px;
         font-family: 'Ysabeau', sans-serif;
     }
-    .fsec, .fsec1{
+
+    .fsec,
+    .fsec1 {
         /* margin: 5% 3.5% 0 7%; */
         width: 250px;
     }
-    
-    .fa-brands{
+
+    .fa-brands {
         color: orange;
         font-size: 1.3rem;
         margin-right: 5%;
         margin-top: 10%;
     }
-    .fsec1 li, .fsec2 li{
+
+    .fsec1 li,
+    .fsec2 li {
         list-style: none;
         line-height: 2.5;
     }
-    .fsec1 a, .fsec2 a{
+
+    .fsec1 a,
+    .fsec2 a {
         text-decoration: none;
         color: #000;
     }
-    .fsec2{
+
+    .fsec2 {
         /* margin: 5% 3.5% 0 0%; */
         margin-left: 7%;
     }
-    .fsec3{
+
+    .fsec3 {
         /* margin: 5% 3.5% 0 10%; */
         margin-left: 7%;
         margin-bottom: 5%;
         line-height: 1.3;
     }
-    
+
 }
+
 .navbar .icon {
     display: none;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .navbar a:not(:first-child) {display: none;}
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
     .navbar a.icon {
-      float: right;
-      display: block;
+        float: right;
+        display: block;
     }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .navbar.responsive {position: relative;}
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: relative;
+    }
+
     .navbar.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
+
     .navbar.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+        float: none;
+        display: block;
+        text-align: left;
     }
-  }
+}

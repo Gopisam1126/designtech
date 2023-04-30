@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <link rel="stylesheet" href="./aboutus.css">
+  <link rel="stylesheet" href="./contactus.css">
   <title>Contact Us</title>
 </head>
 
@@ -45,18 +45,22 @@
 
       </div>
     </div>
+    <!-- ------------------------------------------------ FORM ---------------------------------------- -->
     <div class="abt">
       <h2>Contact Us</h2>
-      <form>
+      <form onsubmit="sendEmail(); reset(); return false;">
         <label for="name">Name</label>
         <input type="text" placeholder="Enter your name" id="name" required>
         <label for="phone">Phone Number</label>
         <input type="text" placeholder="Enter your phone number" id="phone" required>
-        <label for="message">Message</label>
-        <textarea rows="10" cols="50" id="message"></textarea>
+        <label for="email">Email ID</label>
+        <input type="text" placeholder="Enter your email id" id="email" required>
+        <label for="msg">Message</label>
+        <textarea rows="10" cols="50" id="msg" placeholder="Enter your message" required></textarea>
         <button id="btn">Send</button>
       </form>
     </div>
+    <!-- ---------------------------------------------- FORM END -------------------------------------- -->
   </div>
   <section class="footer">
     <div class="footer-container">
@@ -65,14 +69,11 @@
           DesignTech
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod blanditiis quibusdam sapiente veniam
-          vel odio voluptas earum asperiores eligendi architecto!
+          DESIGNTECH ENGINEERS & CONSULTANTS is one of the best civil engineering service providers at
+          Thrissur since 2012, with a team of engineers having more than 25 years of experience in the
+          construction field and they have established their skills in planning, design, execution of the
+          reputed projects in India and Middle East.
         </p>
-        <div>
-          <i class="fa-brands fa-facebook fi"></i>
-          <i class="fa-brands fa-square-instagram ii"></i>
-          <i class="fa-brands fa-square-twitter ti"></i>
-        </div>
       </div>
       <div class="fsec1">
         <h2>
@@ -85,42 +86,64 @@
           <li><a href="./contactus.html">Contact Us</a></li>
         </ul>
       </div>
-      <div class="fsec2">
-        <h2>
-          Legal
-        </h2>
-        <ul>
-          <li><a href="&">Privacy Policy</a></li>
-          <li><a href="&">Terms and Conditions</a></li>
-          <li><a href="&">Faq</a></li>
-          <li><a href="./contactus.html">Help Center</a></li>
-        </ul>
-      </div>
       <div class="fsec3">
-        <h2>
-          Email us on:
-        </h2>
-        <p>
-          example@gmail.com
-        </p>
+        <div>
+          <h2>
+            Email us on
+          </h2>
+          <p>
+            designtech9595@gmail.com
+          </p>
+          <br>
+          <h2>
+            Call us on
+          </h2>
+          <p>
+            +91 9656491920
+          </p>
+        </div>
         <br>
-        <h2>
-          Call us on:
-        </h2>
-        <p>
-          +91 1234567890
-        </p>
-        <br>
-        <h2>
-          Find us:
-        </h2>
-        <p>
-          345th street <br>
-          Newyork
-        </p>
+        <div class="fnd">
+          <h2>
+            Find us
+          </h2>
+          <div class="adrs">
+            <address style="font-style: normal;">
+              Mehdi Complex, <br>
+              Ground Floor, <br>
+              Vengitangu
+            </address>
+            <address style="font-style: normal;">
+              Krishnanjali Building, <br>
+              3rd Floor, <br>
+              Guruvayur
+            </address>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail() {
+      let body = "<h3>Name</h3><br>" + document.getElementById("name").value + "<br><br>" +
+        "<h3>Phone</h3><br>" + document.getElementById("phone").value + "<br><br>" +
+        "<h3>Message</h3><br>" + document.getElementById("msg").value;
+      console.log(body)
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "user@gmail.com",
+        Password: "password",
+        To: "tomail@mail.com",
+        From: "frommail@mail.com",
+        Subject: "Message from Website",
+        Body: "Hello"
+      }).then(
+        message => alert("Message sent successfully.")
+      );
+    }
+  </script>
 </body>
 <script src="https://kit.fontawesome.com/f937732390.js" crossorigin="anonymous"></script>
 
