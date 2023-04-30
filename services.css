@@ -71,11 +71,6 @@
 
 /*  */
 
-.serContainer{
-  background: linear-gradient(#fff, #fff0, #fff), url("./assets/whitebg2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .services{
     margin: 5% 20% 0 20%;
 }
@@ -93,7 +88,7 @@
     background-color: #fff7;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    box-shadow: #0002 3px 3px 15px;
+    box-shadow: #0002 4px 4px 15px;
     border: #FFF 1.3px solid;
     color: #111;
     width: 100%;

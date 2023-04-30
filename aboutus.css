@@ -98,6 +98,10 @@
     width: 300px;
 }
 
+.fsec p {
+    margin-top: 4%;
+}
+
 .fsec>div {
     display: flex;
     gap: 5%;
