@@ -132,8 +132,24 @@ body {
     font-size: 2.3rem;
     margin-bottom: 3%;
     text-transform: uppercase;
+    color: var(--primary);
 }
-
+.pdetails{
+    line-height: 2;
+}
+.cName{
+    margin-left: 12.4%;
+}
+.cVal{
+    margin-left: 1.8%;
+}
+.desc{
+    margin-left: 1.2%;
+}
+.rating p{
+    color: var(--primary);
+    font-weight: 600;
+}
 .pSubsec p {
     font-size: 1.2rem;
     text-align: justify;
@@ -149,6 +165,15 @@ body {
 .pimg {
     height: 100%;
     width: 100%;
+}
+.manymore{
+    text-align: center;
+    font-size: 1.3rem;
+    
+}
+.manymore a{
+    color: #279eee;
+    text-decoration: none;
 }
 
 /*  */
