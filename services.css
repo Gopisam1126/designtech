@@ -76,6 +76,10 @@
 
 /*  */
 
+body {
+  background-color: #ECECEC;
+}
+
 .services {
   margin: 5% 20% 0 20%;
 }

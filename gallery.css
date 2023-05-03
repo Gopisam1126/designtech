@@ -75,7 +75,9 @@
 }
 
 /*  */
-
+body {
+  background-color: #ECECEC;
+}
 .header {
   text-align: center;
   /* padding: 5%; */
