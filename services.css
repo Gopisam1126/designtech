@@ -81,12 +81,17 @@ body {
 }
 
 .services {
-  margin: 5% 20% 0 20%;
+  margin: 5% 15% 5% 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
 }
 
 .services h1 {
+  text-align: center;
   font-size: 3rem;
-  margin: 2% 2% 1% 0;
+  margin-bottom: 8%;
+  color: var(--secondary);
 }
 
 .hhr {
@@ -104,28 +109,40 @@ body {
   border: #FFF 1.3px solid;
   color: #111;
   width: 100%;
-  padding: 2%;
+  padding: 4%;
   transition: 0.1s all linear;
+  display: flex;
+  flex-direction: column;
+}
+
+.os:hover {
+  border: 1px var(--secondary) solid;
 }
 
 .os h2 {
   font-size: 2.3rem;
-  margin: 4% 0% 2% 0;
+  margin-bottom: 2%;
 }
 
 .os p {
   font-size: 1.3rem;
   margin-bottom: 5%;
+  text-align: justify;
 }
 
 .imgContainer {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  gap: 2%;
 }
 
 .cimg {
   height: 300px;
-  margin: 2% 2% 0 0;
   border-radius: 10px;
 }
 
@@ -234,6 +251,7 @@ body {
   height: 70%;
   gap: 30px;
   visibility: hidden;
+  z-index: 10;
 }
 
 .sidenav ul {
@@ -350,6 +368,48 @@ body {
 
   .right_container {
     visibility: visible;
+  }
+
+  .services h1 {
+    font-size: 2rem;
+    margin-top: 10%;
+    margin-bottom: 20%;
+  }
+
+  .services {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  .os {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .os h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8%;
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  .os p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
+  .imgContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  .imgContainer img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 5%;
   }
 
 }
