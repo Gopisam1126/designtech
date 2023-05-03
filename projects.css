@@ -158,108 +158,206 @@ body {
     padding: 2.5% 7% 2.5% 7%;
     background-color: #5d20e2;
     color: #fff;
-  }
-  
-  .footer-container {
+}
+
+.footer-container {
     width: 100%;
     justify-content: space-between;
     display: flex;
     font-family: 'Ysabeau', sans-serif;
     /* background-color: antiquewhite; */
-  }
-  
-  .fsec {
+}
+
+.fsec {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 300px;
-  }
-  .fsec p{
+}
+
+.fsec p {
     margin-top: 4%;
-  }
-  
-  .fsec>div {
+}
+
+.fsec>div {
     display: flex;
     gap: 5%;
-  }
-  
-  
-  .fa-brands {
+}
+
+
+.fa-brands {
     color: var(--secondary);
     font-size: 1.3rem;
     text-decoration: none;
-  }
-  
-  .fa-brands:hover {
+}
+
+.fa-brands:hover {
     color: var(--primary);
     transition: color ease 200ms;
-  }
-  
-  .fsec1,
-  .fsec2 {
+}
+
+.fsec1,
+.fsec2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  
-  .fsec1 li,
-  .fsec2 li {
+}
+
+.fsec1 li,
+.fsec2 li {
     list-style: none;
     line-height: 2.4;
-  }
-  
-  .fsec1 a,
-  .fsec2 a {
+}
+
+.fsec1 a,
+.fsec2 a {
     text-decoration: none;
     color: #fff;
-  }
-  
-  .fsec1 a:hover,
-  .fsec2 a:hover {
+}
+
+.fsec1 a:hover,
+.fsec2 a:hover {
     color: var(--primary);
-  }
-  
-  .fsec3 {
+}
+
+.fsec3 {
     display: flex;
     flex-direction: column;
     line-height: 1.2;
-  }
-  .adrs{
+}
+
+.adrs {
     display: flex;
     margin-left: 2%;
     font-weight: 500;
-  }
+}
+
+
+.right_container {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    top: 0;
+    height: 70%;
+    gap: 30px;
+    visibility: hidden;
+}
+
+.sidenav ul {
+    list-style: none;
+    line-height: 10vh;
+}
+
+.sidenav ul li a {
+    text-decoration: none;
+    color: #111;
+}
+
+.ham {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    visibility: hidden;
+    background-color: #FFF3;
+    backdrop-filter: blur(15px);
+    box-shadow: 3px 3px 10px #0004;
+}
+
+.ham .rar {
+    height: 3px;
+    width: 30px;
+    transform-origin: center;
+    background-color: #111;
+}
+
+.ham .lar {
+    height: 3px;
+    width: 30px;
+    background-color: #111;
+}
+
+.ham:hover {
+    background-color: #FFF3;
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    background-color: #fffa;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    width: 50%;
+    padding-left: 10%;
+    box-shadow: -10px 10px 20px #0004;
+    padding-top: 80px;
+    visibility: hidden;
+    transition: opacity 300ms ease-in-out;
+}
 
 @media only screen and (max-width: 600px) {
 
+    .row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .column {
+        max-width: 100%;
+    }
+
+    .abt h2 {
+        margin: 0;
+    }
+
+    .dlogo {
+        transform: translateX(20%);
+    }
+
     .headcontainer {
-        /* margin: 2% 0 5% 13.5% */
-        margin: 10% 0 5% 30%;
-        position: absolute;
+        transform: translateY(250%);
     }
 
     .headcontainer h1 {
         font-size: 2.5rem;
-        font-family: 'Bruno Ace', cursive;
     }
 
     .headcontainer h4 {
-        font-size: 1.1rem;
-        font-family: 'Bruno Ace', cursive;
-        margin-top: 8.5%;
-    }
-
-    .dlogo {
-        position: relative;
-        height: 100px;
-        width: 90px;
-        top: 150px;
-        border-radius: 10px;
-        margin: 2% 0 0 7%;
+        font-size: 1.2rem;
     }
 
     .navbar {
         display: none;
-        margin: 15% 0 0 7%;
     }
+
+    .fsec,
+    .fsec1,
+    .fnd {
+        display: none;
+    }
+
+    .ham {
+        visibility: visible;
+    }
+
+    .sidenav {
+        visibility: hidden;
+    }
+
+    .right_container {
+        visibility: visible;
+    }
+
 }

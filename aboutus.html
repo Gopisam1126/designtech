@@ -41,8 +41,21 @@
                     </div>
                 </div>
             </div>
-            <div class="rightconainer">
-
+            <div class="right_container">
+                <div class="ham" onclick="hamfunc();">
+                    <div class="lar"></div>
+                    <div class="rar"></div>
+                </div>
+                <div class="sidenav">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./aboutus.html" style="font-weight: bold;">About us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./projects.html">Projects</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="./contactus.html">Contact us</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="abt">
@@ -136,5 +149,22 @@
     </section>
 </body>
 <script src="https://kit.fontawesome.com/f937732390.js" crossorigin="anonymous"></script>
+<script>
+    var tru = 0;
+    function hamfunc() {
+        console.log("Entered function");
+        let snav = document.querySelector(".sidenav");
+        if (tru == 1) {
+            snav.style.opacity = "0%";
+            snav.style.visibility = "hidden";
+            tru = 0;
+        }
+        else {
+            snav.style.opacity = "100%";
+            snav.style.visibility = "visible";
+            tru = 1;
+        }
+    }
+</script>
 
 </html>

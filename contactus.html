@@ -12,6 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="./contactus.css">
   <link rel="stylesheet" href="./aboutus.css">
+  <link rel="stylesheet" href="./temp.css">
   <title>Contact Us</title>
 </head>
 
@@ -42,14 +43,59 @@
           </div>
         </div>
       </div>
-      <div class="rightconainer">
-
+      <div class="right_container">
+        <div class="ham" onclick="hamfunc();">
+          <div class="lar"></div>
+          <div class="rar"></div>
+        </div>
+        <div class="sidenav">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About us</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./contactus.html" style="font-weight: bold;">Contact us</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <!-- ------------------------------------------------ FORM ---------------------------------------- -->
     <div class="abt">
       <h2>Contact Us</h2>
-      <form onsubmit="sendEmail(); reset(); return false;">
+      <div class="contact_details">
+        <div>
+          <h3>Email</h3>
+          <p>
+            designtech9595@gmail.com
+          </p>
+        </div>
+        <div>
+          <h3>Phone</h3>
+          <p>
+            +91 9656491920
+          </p>
+        </div>
+        <div>
+          <h3>Address</h3>
+          <p>
+            Mehdi Complex, <br>
+            Ground Floor, <br>
+            Vengitangu, <br>
+            Krishnanjali Building, <br>
+            3rd Floor, <br>
+            Guruvayur
+          </p>
+        </div>
+      </div>
+
+      <hr style="margin-top: 3%;margin-bottom: 3%; opacity: 50%; box-shadow: 0px 0px 10px #50F;">
+
+      <div class="inquire">
+        <h2 style="font-size: 1.5rem;">Send Your Inquiries Here...</h2>
+      </div>
+
+      <form onsubmit="alert('Message service temporarily suspended. [ ERROR ]'); reset(); return false;">
         <label for="name">Name</label>
         <input type="text" placeholder="Enter your name" id="name" required>
         <label for="phone">Phone Number</label>
@@ -60,7 +106,10 @@
         <textarea rows="10" cols="50" id="msg" placeholder="Enter your message" required></textarea>
         <button id="btn">Send</button>
       </form>
+      <hr style="margin-top: 5%;margin-bottom: 3%; opacity: 50%; box-shadow: 0px 0px 10px #50F;">
+
     </div>
+
     <!-- ---------------------------------------------- FORM END -------------------------------------- -->
   </div>
   <section class="footer">
@@ -100,7 +149,9 @@
             Call us on
           </h2>
           <p>
-            +91 9656491920
+            <a>
+              +91 9656491920
+            </a>
           </p>
         </div>
         <br>
@@ -147,5 +198,22 @@
   </script>
 </body>
 <script src="https://kit.fontawesome.com/f937732390.js" crossorigin="anonymous"></script>
+<script>
+  var tru = 0;
+  function hamfunc() {
+    console.log("Entered function");
+    let snav = document.querySelector(".sidenav");
+    if (tru == 1) {
+      snav.style.opacity = "0%";
+      snav.style.visibility = "hidden";
+      tru = 0;
+    }
+    else {
+      snav.style.opacity = "100%";
+      snav.style.visibility = "visible";
+      tru = 1;
+    }
+  }
+</script>
 
 </html>

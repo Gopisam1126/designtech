@@ -129,7 +129,10 @@
                     DesignTech
                 </h2>
                 <p>
-                    DESIGNTECH ENGINEERS & CONSULTANTS is one of the best civil engineering service providers at Thrissur since 2012, with a team of engineers having more than 25 years of experience in the construction field and they have established their skills in planning, design, execution of the reputed projects in India and Middle East.
+                    DESIGNTECH ENGINEERS & CONSULTANTS is one of the best civil engineering service providers at
+                    Thrissur since 2012, with a team of engineers having more than 25 years of experience in the
+                    construction field and they have established their skills in planning, design, execution of the
+                    reputed projects in India and Middle East.
                 </p>
             </div>
             <div class="fsec1">
@@ -178,5 +181,22 @@
     </section>
 </body>
 <script src="https://kit.fontawesome.com/f937732390.js" crossorigin="anonymous"></script>
+<script>
+    var tru = 0;
+    function hamfunc() {
+        console.log("Entered function");
+        let snav = document.querySelector(".sidenav");
+        if (tru == 1) {
+            snav.style.opacity = "0%";
+            snav.style.visibility = "hidden";
+            tru = 0;
+        }
+        else {
+            snav.style.opacity = "100%";
+            snav.style.visibility = "visible";
+            tru = 1;
+        }
+    }
+</script>
 
 </html>

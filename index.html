@@ -11,38 +11,48 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./responsive.css">
     <title>DesignTech</title>
 </head>
 
 <body>
     <section class="header">
-        <div class="headersec">
-            <div class="leftcontainer">
-                <div class="subcontainer">
-                    <img src="./assets/Logo.png" alt="logo" class="dlogo">
-                    <div class="headcontainer">
-                        <h1 class="designtech">
-                            DesignTech
-                        </h1>
-                        <h4 class="subhead">
-                            Engineers and Consultants
-                        </h4>
-                    </div>
-                    <div class="navbar">
-                        <ul class="ul">
-                            <li><a href="./index.html" style="color:var(--primary);font-weight: bold;">Home</a></li>
-                            <li><a href="./aboutus.html">About us</a></li>
-                            <li><a href="./services.html">Services</a></li>
-                            <li><a href="./projects.html">Projects</a></li>
-                            <li><a href="./gallery.html">Gallery</a></li>
-                            <li><a href="./contactus.html">Contact us</a></li>
-                        </ul>
-                    </div>
+        <div class="leftcontainer">
+            <div class="subcontainer">
+                <img src="./assets/Logo.png" alt="logo" class="dlogo">
+                <div class="headcontainer">
+                    <h1 class="designtech">
+                        DesignTech
+                    </h1>
+                    <h4 class="subhead">
+                        Engineers and Consultants
+                    </h4>
+                </div>
+                <div class="navbar">
+                    <ul class="ul">
+                        <li><a href="./index.html" style="color:var(--primary);font-weight: bold;">Home</a></li>
+                        <li><a href="./aboutus.html">About us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./projects.html">Projects</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="./contactus.html">Contact us</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="rightconainer">
-
+        </div>
+        <div class="right_container">
+            <div class="ham" onclick="hamfunc();">
+                <div class="lar"></div>
+                <div class="rar"></div>
+            </div>
+            <div class="sidenav">
+                <ul>
+                    <li><a href="./index.html" style="font-weight: bold;">Home</a></li>
+                    <li><a href="./aboutus.html">About us</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./contactus.html">Contact us</a></li>
+                </ul>
             </div>
         </div>
         <div class="mainsec">
@@ -398,6 +408,22 @@
 </body>
 <script src=" https://kit.fontawesome.com/f937732390.js" crossorigin="anonymous">
 </script>
-<script></script>
+<script>
+    var tru = 0;
+    function hamfunc() {
+        console.log("Entered function");
+        let snav = document.querySelector(".sidenav");
+        if (tru == 1) {
+            snav.style.opacity = "0%";
+            snav.style.visibility = "hidden";
+            tru = 0;
+        }
+        else {
+            snav.style.opacity = "100%";
+            snav.style.visibility = "visible";
+            tru = 1;
+        }
+    }
+</script>
 
 </html>
