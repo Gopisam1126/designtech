@@ -29,7 +29,7 @@
 
 .headcontainer h1 {
   font-size: 6rem;
-  font-family: 'Showcard Gothic', cursive;
+  font-family: 'Showcard Gothic','Bruno Ace','Sigmar', cursive;
 }
 
 .headcontainer h4 {
@@ -412,4 +412,20 @@ body {
     margin-bottom: 5%;
   }
 
+}
+@media only screen and (max-width: 1563px) {
+  .navbar{
+      margin-top: 18.4%;
+  }
+}
+@media only screen and (max-width: 1190px) {
+  .navbar{
+      margin-top: 24.4%;
+  }
+  .headcontainer h1 {
+      transform: translateX(6%);
+  }
+  .headcontainer h4{
+      transform: translateX(6%);
+  }
 }
