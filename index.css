@@ -482,6 +482,11 @@ section {
     justify-content: space-between;
     gap: 6vw;
 }
+.adrs {
+    display: flex;
+    font-weight: 500;
+    margin-top: 2%;
+}
 
 .fnd {
     display: flex;
