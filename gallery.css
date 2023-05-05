@@ -119,8 +119,8 @@ body {
 .column img:hover {
   box-shadow: #0008 5px 5px 15px;
   scale: 1.03;
-  filter: brightness(120%) contrast(115%);
-  cursor: default;
+  filter: brightness(105%);
+  cursor: pointer;
 }
 
 /*  */
