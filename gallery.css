@@ -127,11 +127,9 @@ body {
 /* FOOTER  */
 
 .footer {
-  border-top: 2px solid black;
   padding: 2.5% 7% 2.5% 7%;
-  margin-top: 15%;
-  background-color: var(--secondary);
-  color: #FFF;
+  background-color: #5d20e2;
+  color: #fff;
 }
 
 .footer-container {
@@ -147,6 +145,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 300px;
+  transform: translateX(20%);
+}
+
+.fsec p {
+  margin-top: 4%;
+  transform: translateY(-40%);
 }
 
 .fsec>div {
@@ -187,25 +191,23 @@ body {
 
 .fsec1 a:hover,
 .fsec2 a:hover {
-  color: aqua;
+  color: var(--primary);
+}
+.fsec1 ul{
+  transform: translateY(-50%);
 }
 
 .fsec3 {
   display: flex;
-  line-height: 1.3;
-  justify-content: space-between;
-  gap: 6vw;
-}
-
-.fnd {
-  display: flex;
   flex-direction: column;
+  line-height: 1.2;
+  transform: translateX(-20%);
 }
 
 .adrs {
   display: flex;
+  margin-left: 2%;
   font-weight: 500;
-  margin-top: 2%;
 }
 
 .right_container {

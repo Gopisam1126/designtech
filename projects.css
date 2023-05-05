@@ -210,10 +210,12 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 300px;
+    transform: translateX(20%);
 }
 
 .fsec p {
     margin-top: 4%;
+    transform: translateY(-40%);
 }
 
 .fsec>div {
@@ -256,11 +258,15 @@ body {
 .fsec2 a:hover {
     color: var(--primary);
 }
+.fsec1 ul{
+    transform: translateY(-50%);
+}
 
 .fsec3 {
     display: flex;
     flex-direction: column;
     line-height: 1.2;
+    transform: translateX(-20%);
 }
 
 .adrs {
