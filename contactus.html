@@ -180,27 +180,31 @@
 
   <script src="https://smtpjs.com/v3/smtp.js">
   </script>
-  <script>
-    function sendEmail() {
-      let body = "<h3>Name</h3><br>" + document.getElementById("name").value + "<br><br>" +
-        "<h3>Phone</h3><br>" + document.getElementById("phone").value + "<br><br>" +
-        "<h3>Message</h3><br>" + document.getElementById("msg").value;
-      console.log(body)
-      Email.send({
-        Host: "smtp.gmail.com",
-        Username: "xxx",
-        Password: "yltorjdswcihawvj",
-        To: 'to',
-        From: "from",
-        Subject: "This is the subject",
-        Body: "And this is the body"
-      }).then(
-        message => alert(message)
-      );
-    }
-  </script>
 </body>
 <script src="https://kit.fontawesome.com/f937732390.js" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+
+<script type="text/javascript">
+  (function () {
+    emailjs.init("YEtH2PdlPa2ejw2Cn");
+  })();
+</script>
+
+<script>
+  function sendEmail() {
+    var params = {
+      from_id: document.getElementById("email").value,
+      from_name: document.getElementById("name").value,
+      to_id: "shyamhari0197@gmail.com",
+      from_phone: document.getElementById("phone").value,
+      message: document.getElementById("message").value
+    }
+    emailjs.send("service_if5tpro", "template_bnf6mro", params).then(function (res) { alert("Email sent successfully" + res.status) });
+  }
+</script>
+
 <script>
   var tru = 0;
   function hamfunc() {
