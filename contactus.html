@@ -61,7 +61,6 @@
         </div>
       </div>
     </div>
-    <!-- ------------------------------------------------ FORM ---------------------------------------- -->
     <div class="abt">
       <h2>Contact Us</h2>
       <div class="contact_details">
@@ -101,20 +100,25 @@
       <hr style="margin-top: 3%;margin-bottom: 3%; opacity: 50%; box-shadow: 0px 0px 10px #50F;">
 
       <div class="inquire">
-        <h2 style="font-size: 1.5rem; color: #800A; font-size: 1rem;">&#9888; message service under maintenance...</h2>
+        <h2>&#9998; &nbsp;send your inquiries here...</h2>
       </div>
+      <!-- ------------------------------------------------ FORM ---------------------------------------- -->
 
-      <div style="cursor: not-allowed;">
-        <form onsubmit="sendEmail(); reset(); return false;" style="pointer-events: none; filter: blur(1.5px);">
+      <div class="form_container" id="form_container" style="display: grid;">
+        <div class="form_sent" id="form_sent">
+          <h3>Mail Sent &#9989;</h3>
+          <button onclick="location.reload();">Reset Status</button>
+        </div>
+        <form id="contact_form">
           <label for="name">Name</label>
           <input type="text" placeholder="Enter your name" id="name" required>
           <label for="phone">Phone Number</label>
           <input type="text" placeholder="Enter your phone number" id="phone" required>
           <label for="email">Email ID</label>
           <input type="text" placeholder="Enter your email id" id="email" required>
-          <label for="msg">Message</label>
-          <textarea rows="10" cols="50" id="msg" placeholder="Enter your message" required></textarea>
-          <button id="btn">Send</button>
+          <label for="message">Message</label>
+          <textarea rows="10" cols="50" id="message" placeholder="Enter your message" required></textarea>
+          <button onclick="test();" id="btn">Send</button>
         </form>
       </div>
       <hr style="margin-top: 5%;margin-bottom: 3%; opacity: 50%; box-shadow: 0px 0px 10px #50F;">
@@ -125,71 +129,71 @@
   </div>
   <section class="footer">
     <div class="footer-container">
-        <div class="fsec">
-            <h2>
-                DesignTech
-            </h2>
-            <p>
-                DESIGNTECH ENGINEERS & CONSULTANTS is one of the best civil engineering service providers at
-                Thrissur since 2012, with a team of engineers having more than 25 years of experience in the
-                construction field and they have established their skills in planning, design, execution of the
-                reputed projects in India and Middle East.
-            </p>
+      <div class="fsec">
+        <h2>
+          DesignTech
+        </h2>
+        <p>
+          DESIGNTECH ENGINEERS & CONSULTANTS is one of the best civil engineering service providers at
+          Thrissur since 2012, with a team of engineers having more than 25 years of experience in the
+          construction field and they have established their skills in planning, design, execution of the
+          reputed projects in India and Middle East.
+        </p>
+      </div>
+      <div class="fsec1">
+        <h2>
+          Links
+        </h2>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="fsec3">
+        <div>
+          <h2>
+            Email us on
+          </h2>
+          <p>
+            designtech9595@gmail.com
+          </p>
+          <br>
+          <h2>
+            Call us on
+          </h2>
+          <p>
+            +91 9656491920
+          </p>
         </div>
-        <div class="fsec1">
-            <h2>
-                Links
-            </h2>
+        <br>
+        <div class="fnd">
+          <h2>
+            Find us
+          </h2>
+          <div class="adrs">
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./contactus.html">Contact Us</a></li>
+              <li>
+                <address style="font-style: normal;margin-left: 2%;">
+                  Mehdi Complex, <br>
+                  Ground Floor, <br>
+                  Vengitangu
+                </address>
+              </li><br>
+              <li>
+                <address style="font-style: normal;">
+                  Krishnanjali Building, <br>
+                  3rd Floor, <br>
+                  Guruvayur
+                </address>
+              </li>
             </ul>
+          </div>
         </div>
-        <div class="fsec3">
-            <div>
-                <h2>
-                    Email us on
-                </h2>
-                <p>
-                    designtech9595@gmail.com
-                </p>
-                <br>
-                <h2>
-                    Call us on
-                </h2>
-                <p>
-                    +91 9656491920
-                </p>
-            </div>
-            <br>
-            <div class="fnd">
-                <h2>
-                    Find us
-                </h2>
-                <div class="adrs">
-                    <ul>
-                        <li>
-                            <address style="font-style: normal;margin-left: 2%;">
-                                Mehdi Complex, <br>
-                                Ground Floor, <br>
-                                Vengitangu
-                            </address>
-                        </li><br>
-                        <li>
-                            <address style="font-style: normal;">
-                                Krishnanjali Building, <br>
-                                3rd Floor, <br>
-                                Guruvayur
-                            </address>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-</section>
+  </section>
 
   <script src="https://smtpjs.com/v3/smtp.js">
   </script>
@@ -199,23 +203,37 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
 
-<script type="text/javascript">
-  (function () {
-    emailjs.init("YEtH2PdlPa2ejw2Cn");
-  })();
+<script>
+  function test() {
+    console.log("TEST");
+  }
 </script>
 
 <script>
-  function sendEmail() {
-    var params = {
-      from_id: document.getElementById("email").value,
-      from_name: document.getElementById("name").value,
-      to_id: "shyamhari0197@gmail.com",
-      from_phone: document.getElementById("phone").value,
-      message: document.getElementById("message").value
-    }
-    emailjs.send("service_if5tpro", "template_bnf6mro", params).then(function (res) { alert("Email sent successfully" + res.status) });
+  var form = document.getElementById("contact_form");
+  var sentM = document.getElementById("form_sent");
+  var form_C = document.getElementById("form_container");
+  function submitForm(event) {
+    event.preventDefault();
+
+
+    console.log("Sending MAIL");
+    // var params = {
+    //   from_id: document.getElementById("email").value,
+    //   from_name: document.getElementById("name").value,
+    //   to_id: "shyamhari0197@gmail.com",
+    //   from_phone: document.getElementById("phone").value,
+    //   message: document.getElementById("message").value
+    // }
+    // emailjs.send("sXXX", "XXX", params, "YEtH2PdlPa2ejw2Cn").then(function (res) { });
+
+    form.style.filter = "blur(2.5px)";
+    sentM.style.visibility = "visible";
+    sentM.style.opacity = "100%";
+    form_C.style.pointer = "not-allowed";
+    form.style.pointerEvents = "none";
   }
+  form.addEventListener('submit', submitForm);
 </script>
 
 <script>
