@@ -14,7 +14,7 @@
 }
 
 .leftcontainer {
-    background: url("https://images.pexels.com/photos/7120485/pexels-photo-7120485.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background: linear-gradient(#000d, rgba(0, 0, 0, 0.5)), url("./assets/dubai_mixed_bg.jpg");
     height: 30rem;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@
 
 .headcontainer h1 {
     font-size: 6rem;
-    font-family: 'Showcard Gothic', cursive;
+    font-family: 'Showcard Gothic','Bruno Ace','Sigmar', cursive;
 }
 
 .headcontainer h4 {
@@ -79,8 +79,8 @@
 
 .footer {
     padding: 2.5% 7% 2.5% 7%;
-    background-color: var(--secondary);
-    color: #FFF;
+    background-color: #5d20e2;
+    color: #fff;
 }
 
 .footer-container {
@@ -96,6 +96,12 @@
     flex-direction: column;
     justify-content: space-between;
     width: 300px;
+    transform: translateX(20%);
+}
+
+.fsec p {
+    margin-top: 4%;
+    transform: translateY(-40%);
 }
 
 .fsec>div {
@@ -138,17 +144,21 @@
 .fsec2 a:hover {
     color: var(--primary);
 }
+.fsec1 ul{
+    transform: translateY(-50%);
+}
 
 .fsec3 {
     display: flex;
-    line-height: 1.3;
-    justify-content: space-between;
-    gap: 6vw;
+    flex-direction: column;
+    line-height: 1.2;
+    transform: translateX(-20%);
 }
 
-.fnd {
+.adrs {
     display: flex;
-    flex-direction: column;
+    margin-left: 2%;
+    font-weight: 500;
 }
 
 .abt {
@@ -414,4 +424,20 @@ form button:hover {
     }
 
 
+}
+@media only screen and (max-width: 1563px) {
+    .navbar{
+        margin-top: 18.4%;
+    }
+}
+@media only screen and (max-width: 1190px) {
+    .navbar{
+        margin-top: 24.4%;
+    }
+    .headcontainer h1 {
+        transform: translateX(6%);
+    }
+    .headcontainer h4{
+        transform: translateX(6%);
+    }
 }
