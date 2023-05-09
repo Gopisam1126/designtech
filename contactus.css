@@ -214,11 +214,20 @@ form textarea::placeholder {
     color: #ABABAB;
 }
 
+
 form input:focus,
 form textarea:focus {
     border: 2px solid var(--secondary);
     transition: border ease 500ms;
 }
+
+
+form input:invalid:focus,
+form textarea:invalid:focus {
+    border: 2px solid #F00;
+    transition: border ease 500ms;
+}
+
 
 form button {
     width: 110px;

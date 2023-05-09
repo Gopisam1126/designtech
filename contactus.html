@@ -113,9 +113,10 @@
           <label for="name">Name</label>
           <input type="text" placeholder="Enter your name" id="name" required>
           <label for="phone">Phone Number</label>
-          <input type="text" placeholder="Enter your phone number" id="phone" required>
+          <input type="tel" minlength="8" maxlength="10" placeholder="Enter your phone number" id="phone"
+            pattern="[1-9]{1}[0-9]{9}" required>
           <label for="email">Email ID</label>
-          <input type="text" placeholder="Enter your email id" id="email" required>
+          <input type="email" placeholder="Enter your email id" id="email" required>
           <label for="message">Message</label>
           <textarea rows="10" cols="50" id="message" placeholder="Enter your message" required></textarea>
           <button onclick="test();" id="btn">Send</button>
@@ -213,6 +214,8 @@
   var form = document.getElementById("contact_form");
   var sentM = document.getElementById("form_sent");
   var form_C = document.getElementById("form_container");
+  var fname = document.getElementById("phone");
+
   function submitForm(event) {
     event.preventDefault();
 
@@ -253,5 +256,6 @@
     }
   }
 </script>
+
 
 </html>
