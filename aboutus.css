@@ -253,6 +253,10 @@
     transition: opacity 300ms ease-in-out;
 }
 
+.inquire h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10%;
+}
 
 
 @media only screen and (max-width: 600px) {

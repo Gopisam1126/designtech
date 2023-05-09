@@ -218,14 +218,14 @@
 
 
     console.log("Sending MAIL");
-    // var params = {
-    //   from_id: document.getElementById("email").value,
-    //   from_name: document.getElementById("name").value,
-    //   to_id: "shyamhari0197@gmail.com",
-    //   from_phone: document.getElementById("phone").value,
-    //   message: document.getElementById("message").value
-    // }
-    // emailjs.send("sXXX", "XXX", params, "YEtH2PdlPa2ejw2Cn").then(function (res) { });
+    var params = {
+      from_id: document.getElementById("email").value,
+      from_name: document.getElementById("name").value,
+      to_id: "dtechvkg@gmail.com",
+      from_phone: document.getElementById("phone").value,
+      message: document.getElementById("message").value
+    }
+    emailjs.send("service_e1ajp15", "template_lzvqn8p", params, "mmQNpSMbgAYF1ZV24").then(function (res) { });
 
     form.style.filter = "blur(2.5px)";
     sentM.style.visibility = "visible";
